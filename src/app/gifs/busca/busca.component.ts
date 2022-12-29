@@ -15,9 +15,7 @@ export class BuscaComponent {
 
   buscar() {
     const valor = this.txtBuscar.nativeElement.value;
-    
     this.gifsService.buscarGifs(valor);
-
     this.txtBuscar.nativeElement.value = '';
   }
 }

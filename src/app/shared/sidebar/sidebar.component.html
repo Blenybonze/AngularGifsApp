@@ -4,7 +4,11 @@
     <hr class="text-white">
 
     <div class="list-group list-reset">
-        <a *ngFor="let busca of historico" href="#" class="list-group-item list-group-item-action">
+        <a 
+        *ngFor="let busca of historico"
+        href="#" 
+        class="list-group-item list-group-item-action"
+        (click)="buscar(busca)">
             {{busca | titlecase}}
         </a>
     </div>
